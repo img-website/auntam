@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auntam</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body class=" overflow-x-hidden">
+
+    <header class="bg-white shadow-sm top-0 sticky">
+        <div class="max-w-6xl mx-auto px-5 md:px-8 ">
+            <div class="flex items-center justify-between py-2">
+                <!-- Logo -->
+                <div class="w-20 ">
+                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
+                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
+                            class="h-full w-full object-contain">
+                    </a>
+                </div>
+
+                <div class="md:flex hidden flex-row ">
+                    <ul class="space-x-5 flex flex-row">
+                        <li> <a href="./index.html" class="text-sm font-semibold text-[#f0b100]">Home</a></li>
+                        <li> <a href="./about-us.html"
+                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About Us</a></li>
+                        <li> <a href="./privacy-policy.html"
+                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
+                        <li> <a href="./terms-and-condition.html"
+                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
+                        <li> <a href="./refund-policy.html"
+                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="md:hidden">
+                    <div class="flex flex-col justify-center md:hidden">
+                        <span>
+                            <label for="sidebarToggle"
+                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
+                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
+                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </label>
+                        </span>
+                    </div>
+                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
+                    <div
+                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
+                        <div>
+                            <div class="border-b border-white py-5">
+                                <label for="sidebarToggle"
+                                    class="text-2xl font-bold border-b border-white cursor-pointer">
+                                    <div
+                                        class=" text-2xl rounded-tl-[8px] w-9 h-9 ml-4  flex justify-center items-center rounded-tr-[8px] rounded-br-[8px] rounded-bl-[0px] bg-white text-[#000]">
+                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
+                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="px-5 py-2.5 w-full">
+                                <ul class="space-y-3">
+                                    <li> <a href="./index.html"
+                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a>
+                                    </li>
+                                    <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About
+                                            Us</a></li>
+                                    <li> <a href="./privacy-policy.html"
+                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a>
+                                    </li>
+                                    <li> <a href="./terms-and-condition.html"
+                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our
+                                            Terms</a></li>
+                                    <li> <a href="./refund-policy.html"
+                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund
+                                            Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="sidebarToggle"
+                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="bg-white py-10 relative -z-10  ">
+        <div class="max-w-7xl mx-auto flex-col px-4 lg:px-8 flex ">
+            <h1 class="text-2xl sm:text-3xl font-bold text-black">Refund timeline</h1>
+            <p class="leading-relaxed text-base font-semibold text-[#666666] mb-4">Last updated: <strong>September 04, 2023</strong></p>
+
+            <p class="mb-2 leading-relaxed text-sm font-light text-[#666666]">All approved refunds will be refunded to original mode of payment in 5-7 bank working days.
+            </p>
+
+            <!-- Interpretation -->
+            <h2 class="md:text-xl mb-3 text-lg font-bold  text-[#666666]">Interpretation and Definitions</h2>
+
+            <h3 class="md:text-xl text-lg font-bold  text-[#666666]">Interpretation</h3>
+            <p class="mb-4 leading-relaxed text-sm font-light text-[#666666]">The words of which the initial letter is capitalized have meanings defined under the
+                following conditions. The following definitions shall have the same meaning regardless of whether they
+                appear in singular or in plural.</p>
+
+            <!-- Definitions -->
+            <h3 class="text-base font-semibold text-lg text-[#666666] mb-2">Definitions</h3>
+            <p class="mb-4 leading-relaxed text-sm font-light text-[#666666]">For the purposes of this Refund Policy:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Application</strong> refers to the software program provided by the Company downloaded by
+                    You on any electronic device, named Auntam</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Company</strong> refers to 10F Technospike Private Limited, Uttarakhand, India 264404.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Driver</strong> refers to individuals accepting bookings and driving the vehicle for
+                    customers.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone
+                    or a digital tablet.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>User</strong> refers to individuals who have booked cab services using our platform.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Agent</strong> refers to intermediaries who book rides on behalf of users or drivers.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Cancellation</strong> means the act of terminating a booking before the service has
+                    commenced.</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>You</strong> means the individual accessing or using the Service, or the company, or other
+                    legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+                </li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]"><strong>Refund</strong> refers to the amount that will be payable back to the driver in case booking
+                    is canceled.</li>
+            </ul>
+
+            <!-- Booking Cancellation Rights -->
+            <h2 class="md:text-xl text-lg font-semibold text-[#666666]  mt-4 mb-2">Booking Cancellation Rights</h2>
+            <p class="mb-4 leading-relaxed text-sm font-light text-[#666666]">Driver or Agent can cancel a booking anytime before the driver is available at the pick-up
+                location and agent or driver have clicked – “Pickup Ride”. Post clicking upon pickup ride no booking
+                cancellation can be done.</p>
+
+            <!-- Refund Policy in case of Cancellation -->
+            <h2 class="md:text-xl text-lg font-semibold text-[#666666] mt-3 mb-2">Refund Policy in case of Cancellation –</h2>
+
+            <h3 class="md:text-lg text-base font-semibold text-[#666666] mt-3 mb-2">Booking Cancellation by agent –</h3>
+            <p class="mb-4 leading-relaxed text-sm font-light text-[#666666]">If a booking is canceled by agents before pickup by the driver or arrival point said by the
+                driver will be instantly refunded back to the driver.</p>
+
+            <h3 class="md:text-lg text-base font-semibold text-[#666666] mb-2">Booking Cancellation by Driver –</h3>
+            <p class="mb-4 leading-relaxed text-sm font-light text-[#666666]">In case booking is canceled by driver before pickup then an amount of not more than 50% of
+                the total amount paid by the driver is deducted as cancellation charges. And an amount of 50% to 80% is
+                divided between agent and driver depending upon the circumstances of booking cancellation.</p>
+
+            <p class="leading-relaxed text-sm font-light text-[#666666]">You are advised to revisit this Refund Policy periodically for
+                any changes. Changes to this Refund Policy are effective when they are posted on this page.</p>
+
+            <!-- Contact Us -->
+            <h2 class="md:text-xl text-lg font-semibold text-[#666666] mt-4 mb-1">Contact Us</h2>
+            <p class="mb-2 leading-relaxed text-sm font-light text-[#666666]">If you have any questions about this Privacy Policy, You can contact us:</p>
+            <ul class="list-disc list-inside space-y-1">
+                <li class="leading-relaxed text-sm font-light text-[#666666]">By email: Auntamtravel@gmail.com</li>
+                <li class="leading-relaxed text-sm font-light text-[#666666]">By Call: 7500880047</li>
+            </ul>
+
+
+        </div>
+    </section>
+
+
+    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+
+            <!-- Left: Logo -->
+            <div class="flex  md:w-48 items-center justify-center">
+                <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
+                    class="w-full  object-contain" />
+            </div>
+
+            <!-- Middle: What We Do + Links -->
+            <div class="border-l-2 border-[#00000099] flex flex-col gap-6 px-6 md:col-span-2">
+                <h3 class="text-xl font-medium">What We Do</h3>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Creating tech-enabled tools and services to cater to the needs of the
+                    taxi service market in India. We have developed the “Auntamtravel”
+                    app as a start and will continue to add products and services to
+                    organize this unstructured taxi market in India.
+                </p>
+                <h3 class="text-lg font-semibold ">Useful Links</h3>
+                <ul class="space-y-4 text-sm">
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./about-us.html">About Us</a></li>
+                    <li> <a href="./privacy-policy.html">Privacy</a></li>
+                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
+                    <li> <a href="./refund-policy.html">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact -->
+            <div class="px-6 border-l-2 border-[#00000099] gap-2.5 text-sm">
+                <p class="text-[#00000099] mb-4 font-medium text-base ">24x7 Help & Support - 7500880047</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">Email ID:<br />Auntamtravel@gmail.com</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+
+                </p>
+                <!-- <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+                </p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
