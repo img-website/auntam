@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+
+<body class=" overflow-x-hidden">
+    <header class="bg-white shadow-sm top-0 sticky">
+        <div class="max-w-6xl mx-auto px-5 md:px-8 ">
+            <div class="flex items-center justify-between py-2">
+                <!-- Logo -->
+                <div class="w-20 ">
+                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
+                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
+                            class="h-full w-full object-contain">
+                    </a>
+                </div>
+
+                <div class="md:flex hidden flex-row ">
+                    <ul class="space-x-5 flex flex-row">
+                        <li> <a href="./index.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a></li>
+                        <li> <a href="./about-us.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About Us</a></li>
+                        <li> <a href="./privacy-policy.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
+                        <li> <a href="./terms-and-condition.html" class="text-sm font-semibold text-[#f0b100]">Our Terms</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="lg:hidden">
+                    <div class="flex flex-col justify-center lg:hidden">
+                        <span>
+                            <label for="sidebarToggle"
+                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
+                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
+                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </label>
+                        </span>
+                    </div>
+                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
+                    <div
+                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
+                        <div>
+                            <div class="border-b border-white py-5">
+                                <label for="sidebarToggle"
+                                    class="text-2xl font-bold border-b border-white cursor-pointer">
+                                    <div
+                                        class=" text-2xl rounded-tl-[8px] w-9 h-9 ml-4  flex justify-center items-center rounded-tr-[8px] rounded-br-[8px] rounded-bl-[0px] bg-white text-[#000]">
+                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
+                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="px-5 py-2.5 w-full">
+                                <ul class="space-y-3">
+                        <li> <a href="./index.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a></li>
+                        <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About Us</a></li>
+                        <li> <a href="./privacy-policy.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
+                        <li> <a href="./terms-and-condition.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="sidebarToggle"
+                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <section class=" md:px-8 mt-12 ">
+        <div class="bg-white flex flex-col px-5 pt-10 pb-6 max-w-6xl mx-auto md:px-16">
+
+            <div class=" mx-auto">
+                <!-- Heading -->
+                <h2 class="text-center text-2xl md:text-3xl font-bold mb-6">
+                    TERMS OF SERVICE AGREEMENT
+                </h2>
+
+                <!-- Intro -->
+                <p class="mb-6 leading-relaxed text-sm font-light text-[#666666]">
+                    PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY. BY USING THIS
+                    WEBSITE OR ORDERING PRODUCTS FROM THIS WEBSITE YOU AGREE TO BE BOUND BY
+                    ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+                </p>
+
+                <!-- Agreement Description -->
+                <p class="mb-6 leading-relaxed text-sm font-light text-[#666666]">
+                    This Terms of Service Agreement (the “Agreement”) governs your use of this website,
+                    [https://Auntamtravel] (the “Website”), [TSP Technologies Private Limited] (“TSP Technologies
+                    Private Limited”) offer of products for purchase on this Website, or your purchase of products
+                    available on this Website. This Agreement includes, and incorporates by this reference, the policies
+                    and guidelines referenced below. [TSP Technologies Private Limited] reserves the right to change or
+                    revise the terms and conditions of this Agreement at any time by posting any changes or a revised
+                    Agreement on this Website. [TSP Technologies Private Limited] will alert you that changes or
+                    revisions have been made by indicating on the top of this Agreement the date it was last revised.
+                    The changed or revised Agreement will be effective immediately after it is posted on this Website.
+                    Your use of the Website following the posting any such changes or of a revised Agreement will
+                    constitute your acceptance of any such changes or revisions. [TSP Technologies Private Limited]
+                    encourages you to review this Agreement whenever you visit the Website to make sure that you
+                    understand the terms and conditions governing use of the Website. This Agreement does not alter in
+                    any way the terms or conditions of any other written agreement you may have with [TSP Technologies
+                    Private Limited] for other products or services. If you do not agree to this Agreement (including
+                    any referenced policies or guidelines), please immediately terminate your use of the Website. If you
+                    would like to print this Agreement, please click the print button on your browser toolbar.
+                </p>
+
+                <!-- Section I -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">I. PRODUCTS</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">Terms of Offer. This Website offers
+                    for sale certain products (the “Products”). By
+                    placing an order for Products through this Website, you agree to the terms set forth in this
+                    Agreement.</p>
+
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]"><strong>Customer
+                        Solicitation:</strong> Unless you notify our third party call center
+                    reps or direct [TSP Technologies Private Limited] sales reps, while they are calling you, of your
+                    desire to opt out from further direct company communications and solicitations, you are agreeing to
+                    continue to receive further emails and call solicitations [TSP Technologies Private Limited] and its
+                    designated in house or third party call team(s)</p>
+
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]"><strong>Opt Out Procedure:</strong>
+                    We provide 3 easy ways to opt out of from future
+                    solicitations. 1. You may use the opt out link found in any email solicitation that you may receive.
+                    2. You may also choose to opt out, via sending your email address to: [Auntamtravel@gmail.com]</p>
+                <ol class="list-decimal list-inside space-y-1 mb-6 leading-relaxed text-sm font-light text-[#666666]">
+                    <li>You may use the opt out link found in any email solicitation that you may receive.</li>
+                    <li>You may also choose to opt out, via sending your email address to:
+
+                    </li>
+                    <li>You may send a written remove request to Madangir, New Delhi-110062, India.</li>
+                </ol>
+
+                <!-- Section II -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">II. WEBSITE</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Content; Intellectual Property; Third Party Links. In addition to making Products available, this
+                    Website also offers information and marketing materials. This Website also offers information, both
+                    directly and through indirect links to third-party websites, about nutritional and dietary
+                    supplements. [TSP Technologies Private Limited] does not always create the information offered on
+                    this Website; instead the information is often gathered from other sources. To the extent that [TSP
+                    Technologies Private Limited] does create the content on this Website, such content is protected by
+                    intellectual property laws of the India, foreign nations, and international bodies. Unauthorized use
+                    of the material may violate copyright, trademark, and/or other laws. You acknowledge that your use
+                    of the content on this Website is for personal, noncommercial use. Any links to third-party websites
+                    are provided solely as a convenience to you. [TSP Technologies Private Limited] does not endorse the
+                    contents on any such third-party websites. [TSP Technologies Private Limited] is not responsible for
+                    the content of or any damage that may result from your access to or reliance on these third-party
+                    websites. If you link to third-party websites, you do so at your own risk.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Use of Website; [TSP Technologies Private Limited] is not responsible for any damages resulting from
+                    use of this website by anyone. You will not use the Website for illegal purposes. You will (1) abide
+                    by all applicable local, state, national, and international laws and regulations in your use of the
+                    Website (including laws regarding intellectual property), (2) not interfere with or disrupt the use
+                    and enjoyment of the Website by other users, (3) not resell material on the Website, (4) not engage,
+                    directly or indirectly, in transmission of “spam”, chain letters, junk mail or any other type of
+                    unsolicited communication, and (5) not defame, harass, abuse, or disrupt other users of the Website
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    License. By using this Website, you are granted a limited, non-exclusive, non-transferable right to
+                    use the content and materials on the Website in connection with your normal, noncommercial, use of
+                    the Website. You may not copy, reproduce, transmit, distribute, or create derivative works of such
+                    content or information without express written authorization from [TSP Technologies Private Limited]
+                    or the applicable third party (if third party content is at issue).
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Posting. By posting, storing, or transmitting any content on the Website, you hereby grant [TSP
+                    Technologies Private Limited] a perpetual, worldwide, non-exclusive, royalty-free, assignable, right
+                    and license to use, copy, display, perform, create derivative works from, distribute, have
+                    distributed, transmit and assign such content in any form, in all media now known or hereinafter
+                    created, anywhere in the world. [TSP Technologies Private Limited] does not have the ability to
+                    control the nature of the user-generated content offered through the Website. You are solely
+                    responsible for your interactions with other users of the Website and any content you post. [TSP
+                    Technologies Private Limited] is not liable for any damage or harm resulting from any posts by or
+                    interactions between users. [TSP Technologies Private Limited] reserves the right, but has no
+                    obligation, to monitor interactions between and among users of the Website and to remove any content
+                    [TSP Technologies Private Limited] deems objectionable, in MuscleUP Nutrition ‘s sole discretion.
+                </p>
+
+                <!-- Section III -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">III. DISCLAIMER OF WARRANTIES</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    YOUR USE OF THIS WEBSITE AND/OR PRODUCTS ARE AT YOUR SOLE RISK. THE WEBSITE AND PRODUCTS ARE OFFERED
+                    ON AN “AS IS” AND “AS AVAILABLE” BASIS. [TSP Technologies Private Limited] EXPRESSLY DISCLAIMS ALL
+                    WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED
+                    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT WITH RESPECT TO
+                    THE PRODUCTS OR WEBSITE CONTENT, OR ANY RELIANCE UPON OR USE OF THE WEBSITE CONTENT OR PRODUCTS.
+                    (“PRODUCTS” INCLUDE TRIAL PRODUCTS.)YOUR USE OF THIS WEBSITE AND/OR PRODUCTS ARE AT YOUR SOLE RISK.
+                    THE WEBSITE AND PRODUCTS ARE OFFERED ON AN “AS IS” AND “AS AVAILABLE” BASIS. [TSP Technologies
+                    Private Limited] EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED,
+                    INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                    PURPOSE AND NON-INFRINGEMENT WITH RESPECT TO THE PRODUCTS OR WEBSITE CONTENT, OR ANY RELIANCE UPON
+                    OR USE OF THE WEBSITE CONTENT OR PRODUCTS. (“PRODUCTS” INCLUDE TRIAL PRODUCTS.)
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, [TSP Technologies Private Limited] MAKES NO
+                    WARRANTY:
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    THAT THE INFORMATION PROVIDED ON THIS WEBSITE IS ACCURATE, RELIABLE, COMPLETE, OR TIMELY.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    THAT THE LINKS TO THIRD-PARTY WEBSITES ARE TO INFORMATION THAT IS ACCURATE, RELIABLE, COMPLETE, OR
+                    TIMELY.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THIS WEBSITE WILL CREATE ANY
+                    WARRANTY NOT EXPRESSLY STATED HEREIN.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    AS TO THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE PRODUCTS OR THAT DEFECTS IN PRODUCTS WILL
+                    BE CORRECTED.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    REGARDING ANY PRODUCTS PURCHASED OR OBTAINED THROUGH THE WEBSITE.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE EXCLUSIONS
+                    MAY NOT APPLY TO YOU.
+                </p>
+
+                <!-- Section IV -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">IV. LIMITATION OF LIABILITY</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    [TSP Technologies Private Limited] ENTIRE LIABILITY, AND YOUR EXCLUSIVE REMEDY, IN LAW, IN EQUITY,
+                    OR OTHWERWISE, WITH RESPECT TO THE WEBSITE CONTENT AND PRODUCTS AND/OR FOR ANY BREACH OF THIS
+                    AGREEMENT IS SOLELY LIMITED TO THE AMOUNT YOU PAID, LESS SHIPPING AND HANDLING, FOR PRODUCTS
+                    PURCHASED VIA THE WEBSITE.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    [TSP Technologies Private Limited] WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL
+                    OR CONSEQUENTIAL DAMAGES IN CONNECTION WITH THIS AGREEMENT OR THE PRODUCTS IN ANY MANNER, INCLUDING
+                    LIABILITIES RESULTING FROM (1) THE USE OR THE INABILITY TO USE THE WEBSITE CONTENT OR PRODUCTS; (2)
+                    THE COST OF PROCURING SUBSTITUTE PRODUCTS OR CONTENT; (3) ANY PRODUCTS PURCHASED OR OBTAINED OR
+                    TRANSACTIONS ENTERED INTO THROUGH THE WEBSITE; OR (4) ANY LOST PROFITS YOU ALLEGE.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR
+                    CONSEQUENTIAL DAMAGES SO SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+                </p>
+
+                <!-- Section V -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">V. INDEMNIFICATION</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    You will release, indemnify, defend and hold harmless [TSP Technologies Private Limited], and any of
+                    its contractors, agents, employees, officers, directors, shareholders, affiliates and assigns from
+                    all liabilities, claims, damages, costs and expenses, including reasonable attorneys’ fees and
+                    expenses, of third parties relating to or arising out of (1) this Agreement or the breach of your
+                    warranties, representations and obligations under this Agreement; (2) the Website content or your
+                    use of the Website content; (3) the Products or your use of the Products (including Trial Products);
+                    (4) any intellectual property or other proprietary right of any person or entity; (5) your violation
+                    of any provision of this Agreement; or (6) any information or data you supplied to [TSP Technologies
+                    Private Limited]. When [TSP Technologies Private Limited] is threatened with suit or sued by a third
+                    party, [TSP Technologies Private Limited] may seek written assurances from you concerning your
+                    promise to indemnify [TSP Technologies Private Limited]; your failure to provide such assurances may
+                    be considered by [TSP Technologies Private Limited] to be a material breach of this Agreement. [TSP
+                    Technologies Private Limited] will have the right to participate in any defense by you of a
+                    third-party claim related to your use of any of the Website content or Products, with counsel of
+                    [TSP Technologies Private Limited] choice at its expense. [TSP Technologies Private Limited] will
+                    reasonably cooperate in any defense by you of a third-party claim at your request and expense. You
+                    will have sole responsibility to defend [TSP Technologies Private Limited] against any claim, but
+                    you must receive [TSP Technologies Private Limited] prior written consent regarding any related
+                    settlement. The terms of this provision will survive any termination or cancellation of this
+                    Agreement or your use of the Website or Products.
+                </p>
+
+                <!-- Section VI -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">VI. PRIVACY</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    TSP Technologies Private Limited believes strongly in protecting user
+                    privacy and providing you with notice
+                </p>
+
+                <!-- Section VII -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">VII. AGREEMENT TO BE BOUND</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    [TSP Technologies Private Limited] believes strongly in protecting user privacy and providing you
+                    with notice of MuscleUP Nutrition ‘s use of data. Please refer to [TSP Technologies Private Limited]
+                    privacy policy, incorporated by reference herein, that is posted on the Website.
+                </p>
+
+                <!-- Section VIII -->
+                <h3 class="text-sm font-bold text-[#666666] mt-8 mb-4">VIII. GENERAL</h3>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Force Majeure. [TSP Technologies Private Limited] will not be deemed in default hereunder or held
+                    responsible for any cessation, interruption or delay in the performance of its obligations hereunder
+                    due to earthquake, flood, fire, storm, natural disaster, act of God, war, terrorism, armed conflict,
+                    labor strike, lockout, or boycott.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Cessation of Operation. [TSP Technologies Private Limited] may at any time, in its sole discretion
+                    and without advance notice to you, cease operation of the Website and distribution of the Products.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Entire Agreement. This Agreement comprises the entire agreement between you and [TSP Technologies
+                    Private Limited] and supersedes any prior agreements pertaining to the subject matter contained
+                    herein.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Effect of Waiver. The failure of [TSP Technologies Private Limited] to exercise or enforce any right
+                    or provision of this Agreement will not constitute a waiver of such right or provision. If any
+                    provision of this Agreement is found by a court of competent jurisdiction to be invalid, the parties
+                    nevertheless agree that the court should endeavor to give effect to the parties’ intentions as
+                    reflected in the provision, and the other provisions of this Agreement remain in full force and
+                    effect.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Governing Law; Jurisdiction. This Website originates from the [Madangir, New Delhi-110062]. This
+                    Agreement
+                    will be governed by the laws of the State of [Uttarakhand] without regard to its conflict of law
+                    principles to the contrary. Neither you nor [TSP Technologies Private Limited] will commence or
+                    prosecute any suit, proceeding or claim to enforce the provisions of this Agreement, to recover
+                    damages for breach of or default of this Agreement, or otherwise arising under or by reason of this
+                    Agreement, other than in courts located in State of [Uttarakhand]. By using this Website or ordering
+                    Products, you consent to the jurisdiction and venue of such courts in connection with any action,
+                    suit, proceeding or claim arising under or by reason of this Agreement. You hereby waive any right
+                    to trial by jury arising out of this Agreement and any related documents.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Statute of Limitation. You agree that regardless of any statute or law to the contrary, any claim or
+                    cause of action arising out of or related to use of the Website or Products or this Agreement must
+                    be filed within one (1) year after such claim or cause of action arose or be forever barred.
+                </p>
+
+                <!-- Closing -->
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    BY USING THIS WEBSITE OR ORDERING PRODUCTS FROM THIS WEBSITE YOU AGREE TO BE BOUND BY ALL OF THE
+                    TERMS AND CONDITIONS OF THIS AGREEMENT.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Waiver of Class Action Rights. BY ENTERING INTO THIS AGREEMENT, YOU HEREBY IRREVOCABLY WAIVE ANY
+                    RIGHT YOU MAY HAVE TO JOIN CLAIMS WITH THOSE OF OTHER IN THE FORM OF A CLASS ACTION OR SIMILAR
+                    PROCEDURAL DEVICE. ANY CLAIMS ARISING OUT OF, RELATING TO, OR CONNECTION WITH THIS AGREEMENT MUST BE
+                    ASSERTED INDIVIDUALLY.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Termination. [TSP Technologies Private Limited] reserves the right to terminate your access to the
+                    Website if it reasonably believes, in its sole discretion, that you have breached any of the terms
+                    and conditions of this Agreement. Following termination, you will not be permitted to use the
+                    Website and [TSP Technologies Private Limited] may, in its sole discretion and without advance
+                    notice to you, cancel any outstanding orders for Products. If your access to the Website is
+                    terminated, [TSP Technologies Private Limited] reserves the right to exercise whatever means it
+                    deems necessary to prevent unauthorized access of the Website. This Agreement will survive
+                    indefinitely unless and until [TSP Technologies Private Limited] chooses, in its sole discretion and
+                    without advance to you, to terminate it.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Domestic Use. [TSP Technologies Private Limited] makes no representation that the Website or
+                    Products are appropriate or available for use in locations outside India. Users who access the
+                    Website from outside India do so at their own risk and initiative and must bear all responsibility
+                    for compliance with any applicable local laws.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    Assignment. You may not assign your rights and obligations under this Agreement to anyone. [TSP
+                    Technologies Private Limited] may assign its rights and obligations under this Agreement in its sole
+                    discretion and without advance notice to you.
+                </p>
+                <p class="mb-4  leading-relaxed text-sm font-light text-[#666666]">
+                    BY USING THIS WEBSITE OR ORDERING PRODUCTS FROM THIS WEBSITE YOU AGREE
+                    TO BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT.
+                </p>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+
+            <!-- Left: Logo -->
+            <div class="flex md:w-48 items-center justify-center">
+                <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
+                    class="w-full  object-contain" />
+            </div>
+
+            <!-- Middle: What We Do + Links -->
+            <div class="border-l-2 border-[#00000099] flex flex-col gap-6 px-6 md:col-span-2">
+                <h3 class="text-xl font-medium">What We Do</h3>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Creating tech-enabled tools and services to cater to the needs of the
+                    taxi service market in India. We have developed the “Auntamtravel”
+                    app as a start and will continue to add products and services to
+                    organize this unstructured taxi market in India.
+                </p>
+                <h3 class="text-lg font-semibold ">Useful Links</h3>
+                <ul class="space-y-4 text-sm">
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./about-us.html">About Us</a></li>
+                    <li> <a href="./privacy-policy.html">Privacy</a></li>
+                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact -->
+            <div class="px-6 border-l-2 border-[#00000099] gap-2.5 text-sm">
+                <p class="text-[#00000099] mb-4 font-medium text-base ">24x7 Help & Support - 7500880047</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">Email ID:<br />Auntamtravel@gmail.com</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+
+                </p>
+                <!-- <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+                </p> -->
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

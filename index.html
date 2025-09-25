@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+
+
+</head>
+
+<body class=" overflow-x-hidden">
+
+    <header class="bg-white shadow-sm top-0 sticky">
+        <div class="max-w-6xl mx-auto px-5 md:px-8 ">
+            <div class="flex items-center justify-between py-2">
+                <!-- Logo -->
+                <div class="w-20 ">
+                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
+                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
+                            class="h-full w-full object-contain">
+                    </a>
+                </div>
+
+                <div class="md:flex hidden flex-row ">
+                    <ul class="space-x-5 flex flex-row">
+                        <li> <a href="./index.html" class="text-sm font-semibold text-[#f0b100]">Home</a></li>
+                        <li> <a href="./about-us.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About Us</a></li>
+                        <li> <a href="./privacy-policy.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
+                        <li> <a href="./terms-and-condition.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="md:hidden">
+                    <div class="flex flex-col justify-center md:hidden">
+                        <span>
+                            <label for="sidebarToggle"
+                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
+                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
+                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </label>
+                        </span>
+                    </div>
+                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
+                    <div
+                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
+                        <div>
+                            <div class="border-b border-white py-5">
+                                <label for="sidebarToggle"
+                                    class="text-2xl font-bold border-b border-white cursor-pointer">
+                                    <div
+                                        class=" text-2xl rounded-tl-[8px] w-9 h-9 ml-4  flex justify-center items-center rounded-tr-[8px] rounded-br-[8px] rounded-bl-[0px] bg-white text-[#000]">
+                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
+                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="px-5 py-2.5 w-full">
+                                <ul class="space-y-3">
+                        <li> <a href="./index.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a></li>
+                        <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About Us</a></li>
+                        <li> <a href="./privacy-policy.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
+                        <li> <a href="./terms-and-condition.html" class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="sidebarToggle"
+                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="bg-white py-10 relative -z-10  ">
+        <div class="max-w-7xl mx-auto flex-col px-4 lg:px-8 flex md:flex-row gap-8 items-center">
+            <!-- Left Content -->
+
+            <div
+                class="bg-black  text-white rounded-lg w-full md:w-7/12 h-full py-12 px-6 flex flex-col justify-center relative">
+                <div class="md:w-min ">
+                    <span class="text-[#F5A623] font-bold text-lg mb-2">Fact •</span>
+                    <h1 class="text-3xl md:text-4xl text-balance font-bold leading-12">
+                        India’s Biggest
+                        B2B Taxi
+                        Marketplace
+                    </h1>
+                </div>
+                <button class="mt-6 bg-[#F5A623] text-black text-xs w-fit font-medium px-5 py-2 rounded-3xl ">
+                    Know More
+                </button>
+
+                <!-- Image -->
+                <div class="absolute bottom-0 right-0 md:w-7/12 overflow-hidden md:block hidden ">
+                    <img src="src/img/menimg.webp" alt="people" class="w-full object-contain">
+                </div>
+            </div>
+
+
+            <!-- Right Content (Services) -->
+            <div class="md:w-2/5 w-full md:h-80">
+                <h3 class="text-xl font-semibold text-gray-800 mb-6">Our Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-full justify-start pb-10 ">
+
+                    <!-- Service Card 1 -->
+                    <div class=" w-full h-full ">
+                        <div
+                            class="bg-[#E4B64E] rounded-4xl h-full py-2 px-3.5 w-full flex-col flex items-start justify-between gap-3">
+                            <div class="flex flex-col w-full">
+                                <div class="w-14 h-14">
+                                    <img src="src/img/car.webp" alt="car" fetchpriority="low" loading="lazy"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex justify-end items-end cursor-pointer">
+                                    <span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg text-black">B2B Taxi Marketplace</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class=" w-full h-full ">
+                        <div
+                            class="bg-[#BFD8E9] rounded-4xl h-full py-2 px-3.5 w-full flex-col flex items-start justify-between gap-3">
+                            <div class="flex flex-col w-full">
+                                <div class="w-14 h-14">
+                                    <img src="src/img/world.webp" alt="car" fetchpriority="low" loading="lazy"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex justify-end items-end cursor-pointer">
+                                    <span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg text-black">Vehicle Rental Services for Tour Operators
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class=" w-full h-full  ">
+                        <div
+                            class="bg-[#63CFE1] rounded-4xl h-full px-3.5 py-2 w-full flex-col flex items-start justify-between gap-3">
+                            <div class="flex flex-col w-full">
+                                <div class="w-14 h-14">
+                                    <img src="src/img/health.webp" alt="car" fetchpriority="low" loading="lazy"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex justify-end items-end cursor-pointer">
+                                    <span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-lg text-black">Vehicle Insurance @ ease</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class=" md:px-8 px-5 ">
+        <div class="bg-[#F3F2F7] max-w-7xl mx-auto px-5 rounded-3xl pt-10 pb-6">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+
+                <!-- Left Text -->
+                <div class="w-fit">
+                    <h2 class="text-2xl md:text-3xl font-semibold text-black">
+                        Why choose us?
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="text-base font-light text-black">
+                        Over <span class="font-bold">2 lakh+ connected vehicles,</span> ready to serve your needs.
+                    </p>
+                </div>
+                <div>
+                    <p class="text-base font-light text-black">
+                        Rated <span class="font-bold">4.6 (star)</span> in google review
+                    </p>
+                </div>
+                <div>
+                    <p class="text-base font-light text-black">
+                        More than <span class="font-bold">30000+ hours of support</span> catered
+                    </p>
+                </div>
+
+
+                <!-- Right Playstore Button -->
+                <div class="w-full md:w-auto flex justify-center md:justify-end">
+                    <img src="src/img/Group.webp" alt="Get it on Google Play" class="h-12" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="md:px-8 px-5 py-5">
+        <div class="max-w-7xl mx-auto rounded-3xl py-5 px-7 bg-black text-white  text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Fleet available with us</h2>
+            <p class="text-lg sm:text-xl text-gray-300 mb-12">
+                Choose the perfect vehicle for your Clients travel needs
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <!-- 1: Bus -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/rszimg.webp" alt="All Type Buses" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">ALL TYPE BUSES</p>
+                </div>
+
+                <!-- 2: Force Traveller -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/Bus.webp" alt="Luxury Force Traveller" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">
+                        LUXURY &<br />NORMAL FORCE TRAVELLER
+                    </p>
+                </div>
+
+                <!-- 3: Innova -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/rszimg.webp" alt="Innova Crysta" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">INNOVA INNOVA CRYSTA</p>
+                </div>
+
+                <!-- 4: SUV / MUV -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/Bus.webp" alt="SUV MUV" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">ALL TYPE SUV & MUV</p>
+                </div>
+
+                <!-- 5: Sedan -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/rszimg.webp" alt="Sedan Types" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">SEDAN ALL TYPES</p>
+                </div>
+
+                <!-- 6: Hatchback -->
+                <div class="flex flex-col items-center text-center">
+                    <img src="src/img/Bus.webp" alt="Hatchback" class="h-40 object-contain mb-4" />
+                    <p class="text-yellow-400 font-semibold">HATCHBACK ALL TYPES</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="  px-5 md:px-6  md:py-16">
+        <div class="max-w-7xl mx-auto rounded-3xl px-5 py-5 bg-gray-100 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                Locations we are Serving
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-600 mb-10">
+                Serving major tourist destinations in North India
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Each location badge -->
+                <span class="bg-amber-400 text-black font-medium px-6 py-2 rounded-full">
+                    Uttarakhand
+                </span>
+                <span class="bg-rose-300 text-black font-medium px-6 py-2 rounded-full">
+                    Himachal Pradesh
+                </span>
+                <span class="bg-amber-400 text-black font-medium px-6 py-2 rounded-full">
+                    Punjab
+                </span>
+                <span class="bg-rose-300 text-black font-medium px-6 py-2 rounded-full">
+                    Haryana
+                </span>
+                <span class="bg-rose-300 text-black font-medium px-6 py-2 rounded-full">
+                    Rajasthan
+                </span>
+                <span class="bg-amber-400 text-black font-medium px-6 py-2 rounded-full">
+                    UP West
+                </span>
+                <span class="bg-rose-300 text-black font-medium px-6 py-2 rounded-full">
+                    UP East
+                </span>
+                <span class="bg-amber-400 text-black font-medium px-6 py-2 rounded-full">
+                    Delhi - NCR
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+
+            <!-- Left: Logo -->
+            <div class="flex  md:w-48 items-center justify-center">
+                <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
+                    class="w-full  object-contain" />
+            </div>
+
+            <!-- Middle: What We Do + Links -->
+            <div class="border-l-2 border-[#00000099] flex flex-col gap-6 px-6 md:col-span-2">
+                <h3 class="text-xl font-medium">What We Do</h3>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Creating tech-enabled tools and services to cater to the needs of the
+                    taxi service market in India. We have developed the “Auntamtravel”
+                    app as a start and will continue to add products and services to
+                    organize this unstructured taxi market in India.
+                </p>
+                <h3 class="text-lg font-semibold ">Useful Links</h3>
+                <ul class="space-y-4 text-sm">
+                    <li> <a href="./index.html">Home</a></li>
+                    <li> <a href="./about-us.html">About Us</a></li>
+                    <li> <a href="./privacy-policy.html">Privacy</a></li>
+                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Contact -->
+            <div class="px-6 border-l-2 border-[#00000099] gap-2.5 text-sm">
+                <p class="text-[#00000099] mb-4 font-medium text-base ">24x7 Help & Support - 7500880047</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">Email ID:<br />Auntamtravel@gmail.com</p>
+                <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+
+                </p>
+                <!-- <p class="text-[#00000099] mb-4 font-medium text-base ">
+                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi-110062
+                </p> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
