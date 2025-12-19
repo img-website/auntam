@@ -1,349 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auntam</title>
+    <title>About Us - Auntam | India's Biggest B2B Taxi Marketplace</title>
+    <meta name="description" content="Learn about Auntam - India's biggest B2B taxi marketplace. Our mission, vision, values, and team dedicated to revolutionizing transportation services in India.">
+    <meta name="keywords" content="about Auntam, B2B taxi marketplace, transportation services India, taxi company, Auntam team, mission vision">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://auntam.com/about-us.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auntam.com/about-us.html">
+    <meta property="og:title" content="About Us - Auntam | India's Biggest B2B Taxi Marketplace">
+    <meta property="og:description" content="Learn about Auntam's mission, vision, values, and team dedicated to revolutionizing transportation services in India.">
+    <meta property="og:image" content="https://auntam.com/src/img/Logo.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us - Auntam">
+    <meta name="twitter:description" content="Learn about Auntam's mission, vision, values, and team.">
+    <meta name="twitter:image" content="https://auntam.com/src/img/Logo.webp">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-
-<body class=" overflow-x-hidden">
-    <header class="bg-white shadow-sm top-0 sticky">
-        <div class="max-w-6xl mx-auto px-5 md:px-8 ">
-            <div class="flex items-center justify-between py-2">
+<body class="bg-[#f9f9f9] text-[#191919] overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
-                <div class="w-20 ">
-                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
-                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
-                            class="h-full w-full object-contain">
+                <div class="flex items-center">
+                    <a href="./index.html" class="flex items-center" aria-label="Auntam Home">
+                        <img src="src/img/Logo.webp" alt="Auntam - India's Biggest B2B Taxi Marketplace Logo" width="120" height="48" class="h-12 w-auto object-contain" loading="eager" fetchpriority="high">
                     </a>
                 </div>
 
-                <div class="md:flex hidden flex-row ">
-                    <ul class="space-x-5 flex flex-row">
-                        <li> <a href="./index.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a></li>
-                        <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About Us</a></li>
-                        <li> <a href="./privacy-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
-                        <li> <a href="./terms-and-condition.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
-                        <li> <a href="./refund-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund Policy</a></li>
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8" aria-label="Main navigation">
+                    <a href="./index.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Home</a>
+                    <a href="./about-us.html" class="text-base font-semibold text-[#ae272d] hover:text-[#8d1f24] transition-colors" aria-current="page">About Us</a>
+                    <a href="./privacy-policy.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Privacy</a>
+                    <a href="./terms-and-condition.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Our Terms</a>
+                    <a href="./refund-policy.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Refund Policy</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="#footer" class="hidden lg:inline-block bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-2.5 rounded-full transition-colors">
+                        Contact Us
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-[#191919]" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg" aria-label="Mobile navigation">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="./index.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Home</a>
+                <a href="./about-us.html" class="block py-2.5 text-lg font-semibold text-[#ae272d]" aria-current="page">About Us</a>
+                <a href="./privacy-policy.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Privacy</a>
+                <a href="./terms-and-condition.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Our Terms</a>
+                <a href="./refund-policy.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Refund Policy</a>
+                <a href="#footer" class="block w-full mt-4 bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-3 rounded-full transition-colors text-center" aria-label="Contact Us - Scroll to footer">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-[#191919] to-[#2c2c2c] text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    About <span class="text-[#ae272d]">Auntam</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    India's largest B2B taxi marketplace, revolutionizing transportation services through technology and innovation.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Google Play Store" rel="noopener noreferrer" target="_blank">
+                        <img src="src/img/Group.webp" alt="Get Auntam app on Google Play Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                    </a>
+                    <a href="https://apps.apple.com/in/app/auntam/id6753667250" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Apple App Store" rel="noopener noreferrer" target="_blank">
+                        <img src="src/img/serviceApple.webp" alt="Download Auntam app on Apple App Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Element -->
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ae272d] via-[#ae272d] to-transparent"></div>
+    </section>
+
+    <!-- Mission, Vision & Values Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#191919] mb-4">Our Core Principles</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Driving innovation in India's transportation sector</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-gradient-to-br from-[#fef8e6] to-[#fcf2d8] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-md mr-4">
+                            <img src="src/img/visionsec.webp" alt="Auntam mission icon - Regulating and organizing taxi industry" width="32" height="32" class="w-8 h-8 object-contain" loading="lazy">
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#191919]">Our <span class="text-[#ae272d] underline">Mission</span></h3>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        To regulate and organize this unregulated industry, giving voice to small-time operators and establishing common standards that benefit all stakeholders in the transportation ecosystem.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-gradient-to-br from-[#e8f4fc] to-[#d9edfa] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-md mr-4">
+                            <img src="src/img/visionsec2.webp" alt="Auntam vision icon - Nationwide taxi service community" width="32" height="32" class="w-8 h-8 object-contain" loading="lazy">
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#191919]">Our <span class="text-[#ae272d] underline">Vision</span></h3>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        To create a nationwide community of taxi service industry stakeholders, consolidating all related processes under one umbrella to streamline operations and enhance service delivery across India.
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-gradient-to-br from-[#e0f7fa] to-[#d1f2f7] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-white flex items-center justify-center shadow-md mr-4">
+                            <img src="src/img/visionsec3.webp" alt="Auntam values icon - Integrity, innovation and inclusivity" width="32" height="32" class="w-8 h-8 object-contain" loading="lazy">
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#191919]">Our <span class="text-[#ae272d] underline">Values</span></h3>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Integrity, innovation, and inclusivity form the foundation of our operations. We believe in creating value for every participant in the transportation ecosystem while maintaining the highest standards of service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gradient-to-r from-[#191919] to-[#2a2a2a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Meet Our Team</h2>
+                <p class="text-xl text-gray-300">Passionate professionals driving innovation in the transportation sector</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="src/img/SonikaKinha.webp" alt="Ms. Sonika Kinha - Chairman of Auntam" width="300" height="400" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Ms. Sonika Kinha</h3>
+                        <p class="text-[#ae272d] font-semibold mb-3">Chairman</p>
+                        <p class="text-gray-300 text-sm">Leading strategic vision and organizational growth</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="src/img/RakeshKuma.webp" alt="Mr. Rakesh Kumar - Founder of Auntam" width="300" height="400" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Mr. Rakesh Kumar</h3>
+                        <p class="text-[#ae272d] font-semibold mb-3">Founder</p>
+                        <p class="text-gray-300 text-sm">Pioneering innovation in transportation technology</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="src/img/HansrajKinha.webp" alt="Hansraj Kinha - Co-Founder of Auntam" width="300" height="400" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Hansraj Kinha</h3>
+                        <p class="text-[#ae272d] font-semibold mb-3">Co-Founder</p>
+                        <p class="text-gray-300 text-sm">Driving operational excellence and market expansion</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="src/img/HansrajKinha.webp" alt="Hansraj Kinha - Co-Founder of Auntam" width="300" height="400" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Hansraj Kinha</h3>
+                        <p class="text-[#ae272d] font-semibold mb-3">Co-Founder</p>
+                        <p class="text-gray-300 text-sm">Focusing on strategic partnerships and business development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Us Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-[#f3f2f7] to-[#e8e7f0] rounded-2xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[#191919] mb-4">Work With Us</h2>
+                        <p class="text-lg text-gray-700 mb-6">Join our dynamic team and help revolutionize India's transportation industry</p>
+                        
+                        <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-[#ae272d] text-white flex items-center justify-center mr-3">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Friendly Environment</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-[#ae272d] text-white flex items-center justify-center mr-3">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">Good Salary & Perks</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-[#ae272d] text-white flex items-center justify-center mr-3">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">And Much More</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-[#ae272d] hover:bg-[#8d1f24] text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition-all">
+                        Join Our Team
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="py-16 bg-gradient-to-r from-[#191919] to-[#2a2a2a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Locations We Are Serving</h2>
+                <p class="text-xl text-gray-300 mb-12">Serving major tourist destinations across All India</p>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-6xl mx-auto">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center p-6 bg-white/5 rounded-xl">
+                            <div class="text-4xl text-[#ae272d] mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-bold text-lg">North India</h3>
+                        </div>
+                        <div class="text-center p-6 bg-white/5 rounded-xl">
+                            <div class="text-4xl text-[#ae272d] mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-bold text-lg">South India</h3>
+                        </div>
+                        <div class="text-center p-6 bg-white/5 rounded-xl">
+                            <div class="text-4xl text-[#ae272d] mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-bold text-lg">East India</h3>
+                        </div>
+                        <div class="text-center p-6 bg-white/5 rounded-xl">
+                            <div class="text-4xl text-[#ae272d] mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-bold text-lg">West India</h3>
+                        </div>
+                    </div>
+                    <div class="mt-10 text-center">
+                        <p class="text-gray-300 text-lg">Pan-India coverage with dedicated local support in every region</p>
+                        <div class="mt-6 flex justify-center space-x-4">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-check-circle text-[#ae272d] mr-2"></i>
+                                <span>24/7 Customer Support</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-check-circle text-[#ae272d] mr-2"></i>
+                                <span>Local Fleet Partners</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-check-circle text-[#ae272d] mr-2"></i>
+                                <span>Real-time Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#191919] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo & Description -->
+                <div>
+                    <a href="./index.html" class="inline-block mb-6">
+                        <img src="src/img/Logo.webp" alt="Auntam Logo" class="h-12 w-auto object-contain brightness-0 invert">
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Creating tech-enabled tools and services to cater to the needs of the taxi service market in India. We have developed the "Auntamtravel" app as a start and will continue to add products and services to organize this unstructured taxi market in India.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="./index.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Home</a></li>
+                        <li><a href="./about-us.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">About Us</a></li>
+                        <li><a href="./privacy-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Privacy Policy</a></li>
+                        <li><a href="./terms-and-condition.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Our Terms</a></li>
+                        <li><a href="./refund-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Refund Policy</a></li>
+                        <li><a href="./sitemap.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Sitemap</a></li>
                     </ul>
                 </div>
 
-
-                <div class="md:hidden">
-                    <div class="flex flex-col justify-center md:hidden">
-                        <span>
-                            <label for="sidebarToggle"
-                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
-                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
-                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
-                            </label>
-                        </span>
-                    </div>
-                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
-                    <div
-                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
-                        <div>
-                            <div class="border-b border-white py-5">
-                                <label for="sidebarToggle"
-                                    class="text-2xl font-bold border-b border-white cursor-pointer">
-                                    <div
-                                        class=" text-2xl rounded-tl-[8px] w-9 h-9 ml-4  flex justify-center items-center rounded-tr-[8px] rounded-br-[8px] rounded-bl-[0px] bg-white text-[#000]">
-                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
-                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="px-5 py-2.5 w-full">
-                                <ul class="space-y-3">
-                                    <li> <a href="./index.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a>
-                                    </li>
-                                    <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About
-                                            Us</a></li>
-                                    <li> <a href="./privacy-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a>
-                                    </li>
-                                    <li> <a href="./terms-and-condition.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our
-                                            Terms</a></li>
-                                    <li> <a href="./refund-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund
-                                            Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <label for="sidebarToggle"
-                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
-                </div>
-
-
-            </div>
-        </div>
-
-
-    </header>
-
-
-    <section class=" md:px-8 mt-12 ">
-        <div class="bg-white  max-w-7xl mx-auto px-5 rounded-3xl pt-10 pb-6">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 ">
-
-                <div class="bg-[#dfb758] rounded-4xl h-full px-7 py-14 w-full flex-col flex items-start  gap-7">
-                    <div class="flex flex-col w-full gap-7">
-                        <div class="w-12 h-12">
-                            <img src="src/img/visionsec.webp" alt="car" fetchpriority="low" loading="lazy"
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex ">
-                            <h2 class="md:text-4xl text-2xl font-normal text-black">Our <span
-                                    class="font-bold underline">Mission</span></h2>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-medium text-sm md:text-lg text-black leading-7">
-                            To regulate and organize this unregulated industry, giving voice to small-time operators and
-                            establishing common standards.</h4>
-                    </div>
-                </div>
-
-                <div class="bg-[#aed7e8] rounded-4xl h-full px-7 py-14 w-full flex-col flex items-start  gap-7">
-                    <div class="flex flex-col w-full gap-7">
-                        <div class="w-12 h-12">
-                            <img src="src/img/visionsec2.webp" alt="car" fetchpriority="low" loading="lazy"
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex ">
-                            <h2 class="md:text-4xl text-2xl font-normal text-black">Our <span
-                                    class="font-bold underline">Vision</span></h2>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-sm md:text-lg text-black leading-7">
-                            To create a nationwide community of taxi service industry stakeholders, consolidating all
-                            related processes under one umbrella.</h4>
-                    </div>
-                </div>
-
-                <div class="bg-[#63CFE1] rounded-4xl h-full px-7 py-14 w-full flex-col flex items-start  gap-7">
-                    <div class="flex flex-col w-full gap-7">
-                        <div class="w-12 h-12">
-                            <img src="src/img/visionsec3.webp" alt="car" fetchpriority="low" loading="lazy"
-                                class="w-full h-full object-contain">
-                        </div>
-                        <div class="flex ">
-                            <h2 class="md:text-4xl text-2xl font-normal text-black">Our <span
-                                    class="font-bold underline">Value</span></h2>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-medium text-sm md:text-lg text-black leading-7">
-                            To regulate and organize this unregulated industry, giving voice to small-time operators and
-                            establishing common standards.</h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class=" md:px-8 px-5 mt-12 ">
-        <div class="bg-[#1a1a1a] max-w-7xl mx-auto text-center px-5 rounded-3xl pt-10 pb-6">
-            <div class="flex flex-col py-5 ">
-                <h1 class="text-3xl md:text-4xl text-balance font-bold leading-12 text-white">Our Team</h1>
-                <p class="text-lg  text-balance font-light leading-12 text-white">Passionate
-                    professionals driving innovation in the transportation sector.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
-                <div class=" border border-[#da9722] rounded-xl overflow-hidden mb-5">
-                    <div class="overflow-hidden  ">
-                        <img decoding="async" loading="lazy" src="src/img/SonikaKinha.webp" alt="Ms. Sonika Kinha"
-                            class="w-full aspect-[10/12] object-cover  transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-                    <div class="px-3 py-6 flex flex-col justify-center items-center gap-1">
-
-                        <h3>
-                            <a href="" class=" transition-all duration-300 text-[#da9722] text-lg font-semibold">
-                                Ms. Sonika Kinha
-                            </a>
-                        </h3>
-                        <p class="text-white text-base leading-[1.8]">
-                            Chairman
-                        </p>
-
-                    </div>
-                </div>
-                <div class=" border border-[#da9722] rounded-xl overflow-hidden mb-5">
-                    <div class="overflow-hidden ">
-                        <img decoding="async" loading="lazy" src="src/img/RakeshKuma.webp" alt="Mr. Rakesh Kumar"
-                            class="w-full aspect-[10/12] object-cover  transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-                    <div class="px-3 py-6 flex flex-col justify-center items-center gap-1">
-
-                        <h3>
-                            <a href="" class=" transition-all duration-300 text-[#da9722] text-lg font-semibold">
-                                Mr. Rakesh Kumar
-                            </a>
-                        </h3>
-                        <p class="text-white text-base leading-[1.8]">
-                            Founder
-                        </p>
-
-                    </div>
-                </div>
-                <div class=" border border-[#da9722] rounded-xl overflow-hidden mb-5">
-                    <div class="overflow-hidden ">
-                        <img decoding="async" loading="lazy" src="src/img/HansrajKinha.webp" alt="Hansraj Kinha"
-                            class="w-full aspect-[10/12] object-cover  transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-                    <div class="px-3 py-6 flex flex-col justify-center items-center gap-1">
-
-                        <h3>
-                            <a href="" class=" transition-all duration-300 text-[#da9722] text-lg font-semibold">
-                                Hansraj Kinha
-                            </a>
-                        </h3>
-                        <p class="text-white text-base leading-[1.8]">
-                            Co Founder
-                        </p>
-
-                    </div>
-                </div>
-                <div class=" border border-[#da9722] rounded-xl overflow-hidden mb-5">
-                    <div class="overflow-hidden ">
-                        <img decoding="async" loading="lazy" src="src/img/HansrajKinha.webp" alt="Hansraj Kinha"
-                            class="w-full aspect-[10/12] object-cover  transition-transform duration-500 ease-in-out group-hover:scale-110">
-                    </div>
-                    <div class="px-3 py-6 flex flex-col justify-center items-center gap-1">
-
-                        <h3>
-                            <a href="" class=" transition-all duration-300 text-[#da9722] text-lg font-semibold">
-                                Hansraj Kinha
-                            </a>
-                        </h3>
-                        <p class="text-white text-base leading-[1.8]">
-                            Co Founder
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class=" md:px-8 px-5 mt-12 ">
-        <div class="bg-[#F3F2F7] max-w-7xl mx-auto px-5 rounded-3xl pt-10 pb-6">
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:text-start text-center items-center justify-center">
-
-                <!-- Left Text -->
-                <div class="md:w-fit">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-black">
-                        Work With Us
-                    </h2>
-                </div>
-
-                <div class="">
-                    <p class="text-base font-bold text-black">
-
-                        Friendly Environment
-                    </p>
-                </div>
+                <!-- Contact Info -->
                 <div>
-                    <p class="text-base font-bold text-black">
-                        Good Salary & Perks
-                    </p>
+                    <h3 class="text-xl font-bold mb-6 text-white">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-[#ae272d] mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-300 font-semibold">24x7 Help & Support</span><br>
+                                <span class="text-gray-400">7500880047</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-[#ae272d] mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-300 font-semibold">Email ID</span><br>
+                                <span class="text-gray-400">Auntamtravel@gmail.com</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#ae272d] mt-1 mr-3"></i>
+                            <div>
+                                <span class="text-gray-300 font-semibold">Head Office</span><br>
+                                <span class="text-gray-400">Ground Floor 748, DDA Flats, Madangir, New Delhi 110062</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- Social & App -->
                 <div>
-                    <p class="text-base font-bold text-black">
-                        And much more
-                    </p>
+                    <h3 class="text-xl font-bold mb-6 text-white">Stay Connected</h3>
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold mb-4">Download Our App</h4>
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share" class="hover:opacity-90 transition-opacity">
+                            <img src="src/img/Group.webp" alt="Get it on Google Play" class="h-12">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/auntam/id6753667250" class="hover:opacity-90 transition-opacity">
+                            <img src="src/img/serviceApple.webp" alt="Download on App Store" class="h-12">
+                        </a>
+                    </div>
                 </div>
-
-
-                <!-- Right Playstore Button -->
-                <div class="w-full md:w-auto flex justify-center md:justify-end">
-                    <button
-                        class="bg-[#db9722] rounded-4xl border-none text-black font-medium text-base shadow-md px-9 py-2.5">Join
-                        Our Team</button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class=" rounded-3xl md:px-8 my-12">
-        <div class=" max-w-7xl mx-auto px-5 text-center bg-[#F3F2F7] rounded-3xl pt-10 pb-6">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Locations we are Serving
-            </h2>
-            <p class="text-lg sm:text-xl text-gray-600 mb-10">
-                Serving major tourist destinations in All India
-            </p>
-        </div>
-    </section>
-    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
-
-            <!-- Left: Logo -->
-            <div class="flex md:w-48 items-center justify-center">
-                <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
-                    class="w-full  object-contain" />
             </div>
 
-            <!-- Middle: What We Do + Links -->
-            <div class="border-l-2 border-[#00000099] flex flex-col gap-6 px-6 md:col-span-2">
-                <h3 class="text-xl font-medium">What We Do</h3>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Creating tech-enabled tools and services to cater to the needs of the
-                    taxi service market in India. We have developed the “Auntamtravel”
-                    app as a start and will continue to add products and services to
-                    organize this unstructured taxi market in India.
-                </p>
-                <h3 class="text-lg font-semibold ">Useful Links</h3>
-                <ul class="space-y-4 text-sm">
-                    <li> <a href="./index.html">Home</a></li>
-                    <li> <a href="./about-us.html">About Us</a></li>
-                    <li> <a href="./privacy-policy.html">Privacy</a></li>
-                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
-                    <li> <a href="./refund-policy.html">Refund Policy</a></li>
-                </ul>
-            </div>
-
-            <!-- Right: Contact -->
-            <div class="px-6 border-l-2 border-[#00000099] gap-2.5 text-sm">
-                <p class="text-[#00000099] mb-4 font-medium text-base ">24x7 Help & Support - 7500880047</p>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">Email ID:<br />Auntamtravel@gmail.com</p>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi 110062
-
-                </p>
-                <!-- <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi 110062
-                </p> -->
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2023 Auntam. All rights reserved. India's Biggest B2B Taxi Marketplace.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>

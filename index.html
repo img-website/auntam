@@ -1,497 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auntam</title>
+    <title>Auntam - India's Biggest B2B Taxi Marketplace</title>
+    <meta name="description" content="Auntam is India's biggest B2B taxi marketplace offering on-demand taxi solutions, vehicle rental services, and insurance for businesses. Connect with 2L+ vehicles across India.">
+    <meta name="keywords" content="B2B taxi marketplace, taxi booking, vehicle rental, taxi services India, corporate taxi, tour operator vehicles, taxi insurance, Auntam">
+    <meta name="author" content="Auntam">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#ae272d">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auntam.com/">
+    <meta property="og:title" content="Auntam - India's Biggest B2B Taxi Marketplace">
+    <meta property="og:description" content="India's biggest B2B taxi marketplace with 2L+ connected vehicles. On-demand taxi solutions, vehicle rentals, and insurance for businesses.">
+    <meta property="og:image" content="https://auntam.com/src/img/Logo.webp">
+    <meta property="og:site_name" content="Auntam">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://auntam.com/">
+    <meta name="twitter:title" content="Auntam - India's Biggest B2B Taxi Marketplace">
+    <meta name="twitter:description" content="India's biggest B2B taxi marketplace with 2L+ connected vehicles. On-demand taxi solutions, vehicle rentals, and insurance for businesses.">
+    <meta name="twitter:image" content="https://auntam.com/src/img/Logo.webp">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://auntam.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="src/img/Logo.webp">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-
-<body class=" overflow-x-hidden">
-
-
-    <header class="bg-white shadow-sm top-0 sticky">
-        <div class="max-w-6xl pt-2  mx-auto px-4 sm:px-6 md:px-8">
-            <div class="flex md:flex-row pb-4 border-b items-center border-gray-300 justify-between">
-                <div class="w-20 ">
-                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
-                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
-                            class="h-full w-full object-contain">
+<body class="bg-[#f9f9f9] text-[#191919] overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="./index.html" class="flex items-center" aria-label="Auntam Home">
+                        <img src="src/img/Logo.webp" alt="Auntam - India's Biggest B2B Taxi Marketplace Logo" width="120" height="48" class="h-12 w-auto object-contain" loading="eager" fetchpriority="high">
                     </a>
                 </div>
-                <div class="flex h-fit justify-center">
-                    <button
-                        class="rounded-full border-[#00000099] border text-black font-medium text-[#00000099] text-base bg-white text-center px-8 py-2">
-                        Contact US
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8" aria-label="Main navigation">
+                    <a href="./index.html" class="text-base font-semibold text-[#ae272d] hover:text-[#8d1f24] transition-colors" aria-current="page">Home</a>
+                    <a href="./about-us.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">About Us</a>
+                    <a href="./privacy-policy.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Privacy</a>
+                    <a href="./terms-and-condition.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Our Terms</a>
+                    <a href="./refund-policy.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Refund Policy</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="#footer" class="hidden lg:inline-block bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-2.5 rounded-full transition-colors" aria-label="Contact Us - Scroll to footer">
+                        Contact Us
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-[#191919]" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
                     </button>
                 </div>
+            </div>
+        </div>
 
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg" aria-label="Mobile navigation">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="./index.html" class="block py-2.5 text-lg font-semibold text-[#ae272d]" aria-current="page">Home</a>
+                <a href="./about-us.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">About Us</a>
+                <a href="./privacy-policy.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Privacy</a>
+                <a href="./terms-and-condition.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Our Terms</a>
+                <a href="./refund-policy.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Refund Policy</a>
+                <a href="#footer" class="block w-full mt-4 bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-3 rounded-full transition-colors text-center" aria-label="Contact Us - Scroll to footer">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+    </header>
 
-                <div class="lg:hidden">
-                    <div class="flex flex-col justify-center lg:hidden">
-                        <span>
-                            <label for="sidebarToggle"
-                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
-                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
-                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
-                            </label>
-                        </span>
-                    </div>
-                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
-                    <div
-                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
-                        <div>
-                            <div class="border-b border-white py-5">
-                                <label for="sidebarToggle"
-                                    class="text-2xl font-bold border-b border-gray-500 flex justify-end cursor-pointer">
-                                    <div class=" text-2xl w-9 h-9 mr-3.5  flex justify-center items-center text-[#000]">
-                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
-                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="px-5 py-2.5 w-full">
-
-                                <ul class="space-x-5 flex flex-row">
-                                    <li> <a href="./index.html" class="text-sm font-semibold text-[#f0b100]">Home</a>
-                                    </li>
-                                    <li> <a href="./about-us.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About
-                                            Us</a></li>
-                                    <li> <a href="./privacy-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a>
-                                    </li>
-                                    <li> <a href="./terms-and-condition.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our
-                                            Terms</a></li>
-                                    <li> <a href="./refund-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund
-                                            Policy</a></li>
-                                </ul>
-
-                            </div>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-[#191919] to-[#2c2c2c] text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <!-- Left Content -->
+                <div class="relative z-10">
+                    <span class="inline-block bg-[#ae272d] text-white text-sm font-bold px-4 py-1.5 rounded-full mb-4">Fact •</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        India's Biggest<br>
+                        <span class="text-[#ae272d]">B2B Taxi</span><br>
+                        Marketplace
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
+                        Creating tech-enabled tools and services to cater to the needs of the taxi service market in India.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#services" class="bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-8 py-3.5 rounded-full transition-colors inline-block" aria-label="Know more about our services">
+                            Know More
+                        </a>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Google Play Store" rel="noopener noreferrer" target="_blank">
+                                <img src="src/img/Group.webp" alt="Get Auntam app on Google Play Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/auntam/id6753667250" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Apple App Store" rel="noopener noreferrer" target="_blank">
+                                <img src="src/img/serviceApple.webp" alt="Download Auntam app on Apple App Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                            </a>
                         </div>
                     </div>
-                    <label for="sidebarToggle"
-                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative">
+                    <div class="relative lg:absolute lg:right-0 lg:bottom-0">
+                        <img src="src/img/menimg.webp" alt="Auntam B2B taxi marketplace services - Professional transportation solutions for businesses" width="800" height="600" class="w-full max-w-2xl mx-auto lg:ml-auto object-contain" loading="eager" fetchpriority="high">
+                    </div>
                 </div>
             </div>
-            <div class="lg:flex hidden flex-row justify-between py-3 relative">
-                <div class="relative w-full">
+        </div>
+        
+        <!-- Decorative Element -->
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#ae272d] via-[#ae272d] to-transparent"></div>
+    </section>
 
-                    <ul class="flex text-lg font-medium gap-16">
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#191919] mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Reliable Solutions for Your Transportation Needs</p>
+            </div>
 
-                        <li> <a href="./index.html" class="text-sm font-semibold text-[#f0b100]">Home</a></li>
-                        <li> <a href="./about-us.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About Us</a></li>
-                        <li> <a href="./privacy-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
-                        <li> <a href="./terms-and-condition.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
-                        <li> <a href="./refund-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund Policy</a></li>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-gradient-to-br from-[#fef8e6] to-[#fcf2d8] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-16 h-16 rounded-xl bg-white flex items-center justify-center shadow-md">
+                            <img src="src/img/car.webp" alt="On-demand taxi solutions icon for businesses" width="40" height="40" class="w-10 h-10 object-contain" loading="lazy">
+                        </div>
+                        <span class="text-2xl text-[#ae272d]">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">On-Demand Taxi Solutions for Businesses</h3>
+                    <p class="text-gray-600">Efficient and reliable taxi services tailored for corporate needs and business travel.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gradient-to-br from-[#e8f4fc] to-[#d9edfa] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-16 h-16 rounded-xl bg-white flex items-center justify-center shadow-md">
+                            <img src="src/img/world.webp" alt="Vehicle rental services icon for tour operators" width="40" height="40" class="w-10 h-10 object-contain" loading="lazy">
+                        </div>
+                        <span class="text-2xl text-[#ae272d]">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">Vehicle Rental Services for Tour Operators</h3>
+                    <p class="text-gray-600">Comprehensive vehicle rental solutions for tour operators and travel agencies.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gradient-to-br from-[#e0f7fa] to-[#d1f2f7] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="w-16 h-16 rounded-xl bg-white flex items-center justify-center shadow-md">
+                            <img src="src/img/health.webp" alt="Vehicle insurance services icon - Easy insurance solutions" width="40" height="40" class="w-10 h-10 object-contain" loading="lazy">
+                        </div>
+                        <span class="text-2xl text-[#ae272d]">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">Vehicle Insurance @ Ease</h3>
+                    <p class="text-gray-600">Simplified vehicle insurance solutions for all your transportation assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gradient-to-r from-[#191919] to-[#2a2a2a] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Auntam?</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">India's most trusted B2B taxi marketplace</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Stat 1 -->
+                <div class="text-center p-6 bg-white/5 rounded-2xl backdrop-blur-sm">
+                    <div class="text-5xl font-bold text-[#ae272d] mb-2">2L+</div>
+                    <h3 class="text-xl font-semibold mb-2">Connected Vehicles</h3>
+                    <p class="text-gray-300">Over 2 lakh+ connected vehicles, ready to serve your needs.</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="text-center p-6 bg-white/5 rounded-2xl backdrop-blur-sm">
+                    <div class="flex justify-center items-center mb-2">
+                        <div class="text-5xl font-bold text-[#ae272d] mr-2">4.6</div>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Google Rating</h3>
+                    <p class="text-gray-300">Rated 4.6 stars based on customer reviews and satisfaction.</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="text-center p-6 bg-white/5 rounded-2xl backdrop-blur-sm">
+                    <div class="text-5xl font-bold text-[#ae272d] mb-2">30K+</div>
+                    <h3 class="text-xl font-semibold mb-2">Support Hours</h3>
+                    <p class="text-gray-300">More than 30,000+ hours of dedicated support catered to our clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#191919] mb-4">Fleet Available With Us</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Choose the perfect vehicle for your clients' travel needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bus -->
+                <div class="bg-gradient-to-b from-blue-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-40 mb-6 flex items-center justify-center">
+                        <img src="src/img/busimg.png" alt="All type buses for group travel, tours, events and long distance journeys" width="200" height="160" class="h-full object-contain" loading="lazy">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">All Type Buses</h3>
+                    <p class="text-gray-600">Providing all categories of buses for group travel, tours, events, and long-distance journeys with full comfort.</p>
+                </div>
+
+                <!-- Traveller -->
+                <div class="bg-gradient-to-b from-pink-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-40 mb-6 flex items-center justify-center">
+                        <img src="src/img/travler.avif" alt="Luxury and normal Force Traveller vehicles for family trips and corporate travel" width="200" height="160" class="h-full object-contain" loading="lazy">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">Luxury & Normal Force Traveller</h3>
+                    <p class="text-gray-600">Choose from luxury or standard Traveller options—ideal for family trips, corporate travel, and group tours.</p>
+                </div>
+
+                <!-- Innova -->
+                <div class="bg-gradient-to-b from-amber-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-40 mb-6 flex items-center justify-center">
+                        <img src="src/img/inova.webp" alt="Innova Crysta premium vehicle for long trips and airport travel" width="200" height="160" class="h-full object-contain" loading="lazy">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">Innova Crysta</h3>
+                    <p class="text-gray-600">Premium comfort and spacious interiors, perfect for long trips, airport travel, and family journeys.</p>
+                </div>
+
+                <!-- SUV & MUV -->
+                <div class="bg-gradient-to-b from-purple-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-40 mb-6 flex items-center justify-center">
+                        <img src="src/img/Red-SUV-PNG-Clipart.png" alt="All type SUV and MUV vehicles for off-road trips and premium rides" width="200" height="160" class="h-full object-contain" loading="lazy">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#191919] mb-3">All Type SUV & MUV</h3>
+                    <p class="text-gray-600">Powerful, stylish and spacious SUVs & MUVs suitable for off-road trips, city travel and premium rides.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <!-- Sedan -->
+                <div class="bg-gradient-to-b from-indigo-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0">
+                            <div class="h-40 flex items-center justify-center">
+                                <img src="src/img/Sedan-Car-PNG-Photo.png" alt="Sedan all types for business travel and long distance journeys" width="200" height="160" class="h-full object-contain" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-6">
+                            <h3 class="text-xl font-bold text-[#191919] mb-3">Sedan All Types</h3>
+                            <p class="text-gray-600">Smooth, comfortable and stylish sedans designed for business travel, local rides and long-distance journeys.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hatchback -->
+                <div class="bg-gradient-to-b from-blue-50 to-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-6 md:mb-0">
+                            <div class="h-40 flex items-center justify-center">
+                                <img src="src/img/hatchback.png" alt="Hatchback all types - compact and budget-friendly vehicles for daily commuting" width="200" height="160" class="h-full object-contain" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-6">
+                            <h3 class="text-xl font-bold text-[#191919] mb-3">Hatchback All Types</h3>
+                            <p class="text-gray-600">Compact, budget-friendly and efficient hatchbacks ideal for daily commuting and short-distance travel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="py-16 bg-gradient-to-r from-[#191919] to-[#2a2a2a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Locations We Are Serving</h2>
+                <p class="text-xl text-gray-300 mb-12">Serving major tourist destinations across India</p>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center p-4">
+                            <div class="text-3xl text-[#ae272d] mb-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">North India</h3>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="text-3xl text-[#ae272d] mb-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">South India</h3>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="text-3xl text-[#ae272d] mb-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">East India</h3>
+                        </div>
+                        <div class="text-center p-4">
+                            <div class="text-3xl text-[#ae272d] mb-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">West India</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-center mt-8">Pan-India coverage with dedicated local support in every region</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#191919] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo & Description -->
+                <div>
+                    <a href="./index.html" class="inline-block mb-6" aria-label="Auntam Home">
+                        <img src="src/img/Logo.webp" alt="Auntam - India's Biggest B2B Taxi Marketplace Logo" width="120" height="48" class="h-12 w-auto object-contain brightness-0 invert" loading="lazy">
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Creating tech-enabled tools and services to cater to the needs of the taxi service market in India. We have developed the "Auntamtravel" app as a start and will continue to add products and services to organize this unstructured taxi market in India.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="./index.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Home</a></li>
+                        <li><a href="./about-us.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">About Us</a></li>
+                        <li><a href="./privacy-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Privacy Policy</a></li>
+                        <li><a href="./terms-and-condition.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Our Terms</a></li>
+                        <li><a href="./refund-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Refund Policy</a></li>
+                        <li><a href="./sitemap.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Sitemap</a></li>
                     </ul>
                 </div>
 
-
-                <div class="flex gap-3">
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
-                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-    </header>
-
-    <section class="bg-white py-10 relative -z-10  ">
-        <div class="max-w-7xl mx-auto flex-col px-4 lg:px-8 flex md:flex-row gap-8 items-center">
-
-            <div
-                class="bg-black  text-white rounded-lg w-full md:w-7/12 h-full py-12 px-6 flex flex-col justify-center relative">
-                <div class="md:w-min ">
-                    <span class="text-[#F5A623] font-bold text-lg mb-2">Fact •</span>
-                    <h1 class="text-3xl md:text-4xl text-balance font-bold leading-12">
-                        India’s Biggest
-                        B2B Taxi
-                        Marketplace
-                    </h1>
-                </div>
-                <button class="mt-6 bg-[#F5A623] text-black text-xs w-fit font-medium px-5 py-2 rounded-3xl ">
-                    Know More
-                </button>
-
-                <!-- Image -->
-                <div class="absolute bottom-0 right-0 md:w-7/12 overflow-hidden md:block hidden ">
-                    <img src="src/img/menimg.webp" alt="people" class="w-full object-contain">
-                </div>
-            </div>
-
-            <div class="md:w-2/5 w-full h-full pt-4 space-y-3">
-               <div class="flex flex-col gap-2 pb-2">
-                 <h3 class="text-2xl font-semibold text-gray-800 ">Our Services</h3>
-                <p class="text-lg font-normal text-gray-600">Reliable Solutions for Your Transportation Needs</p>
-               </div>
-                <div class="grid grid-cols-1 gap-5 h-full justify-start pb-10 ">
-                 
-                    <div class=" w-full h-full ">
-                        <div
-                            class="bg-[#E4B64E] rounded-3xl h-full py-2 px-3.5 w-full flex-col flex items-start justify-between gap-3">
-                            <div class="flex flex-row  items-center justify-between  w-full">
-                                <div class="w-14 h-14">
-                                    <img src="src/img/car.webp" alt="car" fetchpriority="low" loading="lazy"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                    <span class="rounded-full bg-white size-10 flex items-center justify-center">
-                                      <svg class="shrink-0 size-5"  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
-                                    </span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium text-lg text-black">On-Demand Taxi Solutions for Businesses</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
-                    <div class=" w-full h-full ">
-                        <div
-                            class="bg-[#BFD8E9] rounded-3xl h-full py-2 px-3.5 w-full flex-col flex items-start justify-between gap-3">
-                            <div class="flex flex-row items-center justify-between w-full">
-                                <div class="w-14 h-14">
-                                    <img src="src/img/world.webp" alt="car" fetchpriority="low" loading="lazy"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                   <span class="rounded-full bg-white size-10 flex items-center justify-center">
-                                      <svg class="shrink-0 size-5"  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
-                                    </span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium text-lg text-black">Vehicle Rental Services for Tour Operators
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" w-full h-full  ">
-                        <div
-                            class="bg-[#63CFE1] rounded-3xl h-full px-3.5 py-3.5 w-full flex-col flex items-start justify-between gap-3">
-                            <div class="flex flex-row items-center justify-between w-full">
-                                <div class="w-14 h-14">
-                                    <img src="src/img/health.webp" alt="car" fetchpriority="low" loading="lazy"
-                                        class="w-full h-full object-cover">
-                                </div>
-                                   <span class="rounded-full bg-white size-10 flex items-center justify-center">
-                                      <svg class="shrink-0 size-5"  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
-                                    </span>
-                            </div>
-                            <div>
-                                <h4 class="font-medium text-lg text-black">Vehicle Insurance @ ease</h4>
-                            </div>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class=" md:px-8 px-5 py-10 ">
-        <div class="bg-[#F3F2F7] flex flex-col gap-6 max-w-7xl mx-auto px-8 rounded-3xl pt-5 pb-6">
-
-            <div class=" ">
-                <h2 class="text-2xl md:text-4xl font-bold text-black">
-                    Why choose us?
-                </h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center text-center">
-
-
-                <div class="px-4 py-5 rounded-md bg-white shadow">
-                    <p class="text-xl font-medium text-black">
-                        Over <span class="font-bold">2 lakh+ connected vehicles,</span> ready to serve your needs.
-                    </p>
-                </div>
-                <div class="px-4 py-5 rounded-md bg-white shadow">
-                    <p class="text-xl font-medium text-black">
-                        Rated <span class="font-bold">4.6 (star)</span> in google review
-                    </p>
-                </div>
-                <div class="px-4 py-5 rounded-md bg-white shadow">
-                    <p class="text-xl font-medium text-black">
-                        More than <span class="font-bold">30000+ hours of support</span> catered
-                    </p>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">7500880047</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">Auntamtravel@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">Ground Floor 748, DDA Flats, Madangir, New Delhi 110062</span>
+                        </li>
+                    </ul>
                 </div>
 
-            </div>
-
-            <div class="flex md:flex-row flex-col gap-4 items-center justify-center">
-                <!-- Right Playstore Button -->
-                <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share"
-                    download class="  ">
-                    <img src="src/img/Group.webp" alt="Get it on Google Play" class="h-12" />
-                </a>
-                <!-- Right Playstore Button -->
-                <a href="https://apps.apple.com/in/app/auntam/id6753667250" download class=" ">
-                    <img src="src/img/serviceApple.webp" alt="Get it on Google Play" class="h-12" />
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white py-10">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <div class="flex flex-col md:items-start  gap-4 mb-8">
-                <h2 class="text-3xl md:text-5xl font-semibold text-black">Fleet available with us
-                </h2>
-                <p class="text-sm text-gray-700 "> Choose the perfect vehicle for your Clients travel needs</p>
-            </div>
-
-            <div class=" flex flex-col gap-5">
-                <div class="flex flex-col md:flex-row gap-5">
-                    <div class="flex flex-col bg-blue-100 p-8 rounded-3xl justify-between md:w-1/3">
-                        <span class="md:text-3xl text-xl font-semibold text-black"> ALL TYPE BUSES</span>
-                        <div class="">
-                            <img src="src/img/busimg.png" alt="" class="w-full h-full object-cover ">
-                        </div>
-                        <p class="text-[#333] font-medium text-base md:text-lg">
-                            Providing all categories of buses for group travel, tours, events, and long-distance
-                            journeys with full comfort.
-
-                        </p>
-                    </div>
-                    <div class="flex flex-col md:w-2/3 gap-5">
-                        <div class="flex flex-col sm:flex-row bg-pink-100 rounded-3xl p-8 gap-3">
-                            <div class=" flex justify-center flex-col gap-4">
-                                <span class="md:text-3xl text-xl font-semibold text-black">LUXURY & NORMAL FORCE
-                                    TRAVELLER</span>
-                                <p class="text-[#333] font-medium text-base md:text-lg">Choose from luxury or standard
-                                    Traveller options—ideal for family trips, corporate travel, and group tours.</p>
-                            </div>
-                            <div class="md:w-72">
-                                <img src="src/img/travler.avif" alt="All Type Buses" class="h-40 object-contain mb-4" />
-                            </div>
-                            <div>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-                            <div class="flex flex-col p-8 rounded-3xl gap-4 bg-amber-100">
-                                <div class=" flex justify-center flex-col gap-4">
-                                    <span class="md:text-3xl text-xl font-semibold text-black">INNOVA INNOVA
-                                        CRYSTA</span>
-                                    <p class="text-[#333] font-medium text-base md:text-lg">Premium comfort and spacious
-                                        interiors, perfect for long trips, airport travel, and family journeys.
-                                    </p>
-                                </div>
-                                <div class="w-full">
-                                    <img src="src/img/inova.webp" alt="All Type Buses"
-                                        class="h-40 w-full object-contain mb-4" />
-                                </div>
-                            </div>
-                            <div class="flex flex-col p-8 rounded-3xl bg-pink-50">
-                                <div class="flex md:justify-end md:items-end">
-                                    <img src="src/img/Red-SUV-PNG-Clipart.png" alt="SUV MUV"
-                                        class="h-40 object-contain mb-4" />
-                                </div>
-                                <div class=" flex justify-center flex-col gap-4">
-                                    <span class="text-3xl font-semibold text-black">ALL TYPE SUV & MUV</span>
-                                    <p class="text-[#333] font-medium text-lg">Powerful, stylish and spacious SUVs &
-                                        MUVs suitable for off-road trips, city travel and premium rides.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex md:flex-row flex-col gap-5">
-                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 bg-purple-100 p-8 rounded-3xl justify-between">
-                        <div class=" flex justify-center flex-col gap-4">
-                            <span class="md:text-3xl text-xl font-semibold text-black">SEDAN ALL TYPES</span>
-                            <p class="text-[#333] font-medium text-base md:text-lg">Smooth, comfortable and stylish
-                                sedans designed for business travel, local rides and long-distance journeys.
-                            </p>
-                        </div>
-                        <div class="w-full">
-                            <img src="src/img/Sedan-Car-PNG-Photo.png" alt="Sedan Types"
-                                class="h-40 object-cover w-full mb-4" />
-                        </div>
-                    </div>
-                    <div class="md:w-1/3 flex flex-col bg-blue-50 p-8 rounded-3xl justify-between">
-                        <div class=" flex justify-center flex-col gap-4">
-                            <span class="md:text-3xl text-xl font-semibold text-black">HATCHBACK ALL TYPES</span>
-                            <p class="text-[#333] font-medium text-base md:text-lg">Compact, budget-friendly and
-                                efficient hatchbacks ideal for daily commuting and short-distance travel.
-                            </p>
-                        </div>
-                        <div class="">
-                            <img src="src/img/hatchback.png" alt="Hatchback" class="h-40 object-contain mb-4" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="  px-5 md:px-6  md:py-16">
-        <div class="max-w-7xl mx-auto rounded-3xl px-5 py-5 bg-gray-100 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Locations we are Serving
-            </h2>
-            <p class="text-lg sm:text-xl text-gray-600 mb-10">
-                Serving major tourist destinations in All India
-            </p>
-        </div>
-    </section>
-
-    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 ">
-
-            <!-- Left: Logo -->
-            <div class="flex flex-col gap-5">
-                <div class="flex  md:w-40 items-center justify-center">
-                    <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
-                        class="w-full  object-contain" />
-                </div>
-                <p class="text-[#00000099] mb-4 font-medium text-justify text-base ">
-                    Creating tech-enabled tools and services to cater to the needs of the
-                    taxi service market in India. We have developed the “Auntamtravel”
-                    app as a start and will continue to add products and services to
-                    organize this unstructured taxi market in India.
-                </p>
-
-            </div>
-            <!-- Middle: What We Do + Links -->
-            <div class=" flex flex-col gap-3 md:items-center  justify-start  text-start">
-
-
-                <h3 class="text-2xl font-semibold">Useful Links</h3>
-                <ul class="space-y-4 text-base font-medium">
-                    <li> <a href="./index.html">Home</a></li>
-                    <li> <a href="./about-us.html">About Us</a></li>
-                    <li> <a href="./privacy-policy.html">Privacy</a></li>
-                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
-                    <li> <a href="./refund-policy.html">Refund Policy</a></li>
-                </ul>
-            </div>
-
-            <!-- Right: Contact -->
-            <div class=" gap-2.5 text-sm">
-                <div class="text-[#00000099] mb-4 flex items-center gap-2 font-medium text-base ">
-                    <span>
-                        <svg class="shrink-0 size-5" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0 1 28.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 0 1-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 0 1 391 480z">
-                            </path>
-                        </svg>
-                    </span>
-                    7500880047
-                </div>
-                <div class="text-[#00000099] mb-4 flex items-center gap-2 font-medium text-base ">
-                    <span>
-                        <svg class="shrink-0 size-5" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z">
-                            </path>
-                        </svg>
-                    </span>
-                    Auntamtravel@gmail.com
-                </div>
-                <div class="text-[#00000099] flex items-center gap-2 mb-4 font-medium text-base ">
-                    <span>
-                        <svg class="shrink-0 size-5" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
-                            </path>
-                        </svg>
-                    </span>
-                    Ground Floor748,DDA Flats, Madangir, New Delhi 110062
-                </div>
-                <div class="text-[#00000099] flex flex-col gap-3 mb-4 font-semibold text-2xl ">
-                    Stay in Touch
-
-                    <div class="flex gap-3">
-                        <a href="#"
-                            class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                            <svg class="shrink-0 size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                                </path>
-                            </svg>
+                <!-- Social & App -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Stay Connected</h3>
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors" aria-label="Follow Auntam on Facebook" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
                         </a>
-
-                        <a href="#"
-                            class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                            <svg class="shrink-0 size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                                </path>
-                            </svg>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors" aria-label="Follow Auntam on LinkedIn" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                         </a>
-
-                        <a href="#"
-                            class="w-8 h-8 flex items-center justify-center rounded-full bg-[#00000099] text-white">
-                            <svg class="shrink-0 size-4" stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                </path>
-                            </svg>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors" aria-label="Follow Auntam on Instagram" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold mb-4">Download Our App</h4>
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Google Play Store" rel="noopener noreferrer" target="_blank">
+                            <img src="src/img/Group.webp" alt="Get Auntam app on Google Play Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/auntam/id6753667250" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Apple App Store" rel="noopener noreferrer" target="_blank">
+                            <img src="src/img/serviceApple.webp" alt="Download Auntam app on Apple App Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
                         </a>
                     </div>
                 </div>
+            </div>
 
-
-
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2023 Auntam. All rights reserved. India's Biggest B2B Taxi Marketplace.</p>
             </div>
         </div>
     </footer>
 
-</body>
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Auntam",
+        "alternateName": "Auntamtravel",
+        "url": "https://auntam.com",
+        "logo": "https://auntam.com/src/img/Logo.webp",
+        "description": "India's biggest B2B taxi marketplace offering on-demand taxi solutions, vehicle rental services, and insurance for businesses.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ground Floor 748, DDA Flats, Madangir",
+            "addressLocality": "New Delhi",
+            "postalCode": "110062",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-7500880047",
+            "contactType": "customer service",
+            "email": "Auntamtravel@gmail.com",
+            "availableLanguage": ["English", "Hindi"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/auntam",
+            "https://www.linkedin.com/company/auntam",
+            "https://www.instagram.com/auntam"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "1000"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Auntam",
+        "url": "https://auntam.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://auntam.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "B2B Taxi Marketplace",
+        "provider": {
+            "@type": "Organization",
+            "name": "Auntam"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "India"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Transportation Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "On-Demand Taxi Solutions for Businesses"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Vehicle Rental Services for Tour Operators"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Vehicle Insurance Services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuToggle.setAttribute('aria-expanded', !isHidden);
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
 </html>

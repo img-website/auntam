@@ -1,108 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auntam</title>
+    <title>Refund Policy - Auntam | India's Biggest B2B Taxi Marketplace</title>
+    <meta name="description" content="Refund Policy for Auntam - Learn about our refund timeline, cancellation policies, and refund process for taxi bookings.">
+    <meta name="keywords" content="refund policy, cancellation policy, taxi refund, booking refund, Auntam refund">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://auntam.com/refund-policy.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auntam.com/refund-policy.html">
+    <meta property="og:title" content="Refund Policy - Auntam">
+    <meta property="og:description" content="Refund Policy for Auntam - Learn about our refund timeline and cancellation policies.">
+    <meta property="og:image" content="https://auntam.com/src/img/Logo.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Refund Policy - Auntam">
+    <meta name="twitter:description" content="Refund Policy for Auntam - Learn about our refund process.">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-
-<body class=" overflow-x-hidden">
-
-    <header class="bg-white shadow-sm top-0 sticky">
-        <div class="max-w-6xl mx-auto px-5 md:px-8 ">
-            <div class="flex items-center justify-between py-2">
+<body class="bg-[#f9f9f9] text-[#191919] overflow-x-hidden">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
-                <div class="w-20 ">
-                    <a href="./index.html" class="flex items-center gap-2 h-full w-full">
-                        <img src="src/img/Logo.webp" alt="logo" fetchpriority="low" loading="lazy"
-                            class="h-full w-full object-contain">
+                <div class="flex items-center">
+                    <a href="./index.html" class="flex items-center" aria-label="Auntam Home">
+                        <img src="src/img/Logo.webp" alt="Auntam - India's Biggest B2B Taxi Marketplace Logo" width="120" height="48" class="h-12 w-auto object-contain" loading="eager" fetchpriority="high">
                     </a>
                 </div>
 
-                <div class="md:flex hidden flex-row ">
-                    <ul class="space-x-5 flex flex-row">
-                        <li> <a href="./index.html" class="text-sm font-semibold text-[#f0b100]">Home</a></li>
-                        <li> <a href="./about-us.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">About Us</a></li>
-                        <li> <a href="./privacy-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a></li>
-                        <li> <a href="./terms-and-condition.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our Terms</a></li>
-                        <li> <a href="./refund-policy.html"
-                                class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund Policy</a></li>
-                    </ul>
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8" aria-label="Main navigation">
+                    <a href="./index.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Home</a>
+                    <a href="./about-us.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">About Us</a>
+                    <a href="./privacy-policy.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Privacy</a>
+                    <a href="./terms-and-condition.html" class="text-base font-semibold text-[#191919] hover:text-[#ae272d] transition-colors">Our Terms</a>
+                    <a href="./refund-policy.html" class="text-base font-semibold text-[#ae272d] hover:text-[#8d1f24] transition-colors" aria-current="page">Refund Policy</a>
+                </nav>
+
+                <!-- CTA & Mobile Menu Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="#footer" class="hidden lg:inline-block bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-2.5 rounded-full transition-colors" aria-label="Contact Us - Scroll to footer">
+                        Contact Us
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-[#191919]" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-
-
-                <div class="md:hidden">
-                    <div class="flex flex-col justify-center md:hidden">
-                        <span>
-                            <label for="sidebarToggle"
-                                class="w-auto font-medium lg:text-base drop-shadow-md text-xs !leading-5 py-3 px-3 lg:py-4 text-black duration-300">
-                                <svg class="injectable size-5" stroke="currentColor" fill="none" stroke-width="2"
-                                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em"
-                                    width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
-                            </label>
-                        </span>
-                    </div>
-                    <input type="checkbox" id="sidebarToggle" class="peer hidden">
-                    <div
-                        class="fixed !z-50 top-0 left-0 w-full h-screen bg-white shadow-lg transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300">
-                        <div>
-                            <div class="border-b border-white py-5">
-                                <label for="sidebarToggle"
-                                    class="text-2xl font-bold border-b border-white cursor-pointer">
-                                    <div
-                                        class=" text-2xl rounded-tl-[8px] w-9 h-9 ml-4  flex justify-center items-center rounded-tr-[8px] rounded-br-[8px] rounded-bl-[0px] bg-white text-[#000]">
-                                        <svg class="injectable size-6" stroke="currentColor" fill="none"
-                                            stroke-width="0" viewBox="0 0 15 15" height="1em" width="1em"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </label>
-                            </div>
-
-                            <div class="px-5 py-2.5 w-full">
-                                <ul class="space-y-3">
-                                    <li> <a href="./index.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Home</a>
-                                    </li>
-                                    <li> <a href="./about-us.html" class="text-sm font-semibold text-[#f0b100]">About
-                                            Us</a></li>
-                                    <li> <a href="./privacy-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Privacy</a>
-                                    </li>
-                                    <li> <a href="./terms-and-condition.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Our
-                                            Terms</a></li>
-                                    <li> <a href="./refund-policy.html"
-                                            class="text-sm font-semibold text-[#00000099] hover:text-[#666]">Refund
-                                            Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <label for="sidebarToggle"
-                        class="fixed inset-0 peer-checked:z-10  bg-transparent hidden peer-checked:block"></label>
-                </div>
-
-
             </div>
         </div>
 
-
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg" aria-label="Mobile navigation">
+            <div class="px-4 pt-2 pb-4 space-y-3">
+                <a href="./index.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Home</a>
+                <a href="./about-us.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">About Us</a>
+                <a href="./privacy-policy.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Privacy</a>
+                <a href="./terms-and-condition.html" class="block py-2.5 text-lg font-semibold text-[#191919] hover:text-[#ae272d]">Our Terms</a>
+                <a href="./refund-policy.html" class="block py-2.5 text-lg font-semibold text-[#ae272d]" aria-current="page">Refund Policy</a>
+                <a href="#footer" class="block w-full mt-4 bg-[#ae272d] hover:bg-[#8d1f24] text-white font-semibold px-6 py-3 rounded-full transition-colors text-center" aria-label="Contact Us - Scroll to footer">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
     </header>
+
 
     <section class="bg-white py-10 relative -z-10  ">
         <div class="max-w-7xl mx-auto flex-col px-4 lg:px-8 flex ">
@@ -176,49 +158,126 @@
     </section>
 
 
-    <footer class="bg-white text-[#00000099] py-10 mt-4 shadow-sm border-t border-gray-200">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#191919] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Logo & Description -->
+                <div>
+                    <a href="./index.html" class="inline-block mb-6">
+                        <img src="src/img/Logo.webp" alt="Auntam - India's Biggest B2B Taxi Marketplace Logo" width="120" height="48" class="h-12 w-auto object-contain brightness-0 invert" loading="lazy">
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Creating tech-enabled tools and services to cater to the needs of the taxi service market in India. We have developed the "Auntamtravel" app as a start and will continue to add products and services to organize this unstructured taxi market in India.
+                    </p>
+                </div>
 
-            <!-- Left: Logo -->
-            <div class="flex  md:w-48 items-center justify-center">
-                <img src="src/img/Logo.webp" alt="footerlogo" fetchpriority="low" loading="lazy"
-                    class="w-full  object-contain" />
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="./index.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Home</a></li>
+                        <li><a href="./about-us.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">About Us</a></li>
+                        <li><a href="./privacy-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Privacy Policy</a></li>
+                        <li><a href="./terms-and-condition.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Our Terms</a></li>
+                        <li><a href="./refund-policy.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Refund Policy</a></li>
+                        <li><a href="./sitemap.html" class="text-gray-400 hover:text-[#ae272d] transition-colors">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">7500880047</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">Auntamtravel@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#ae272d] mt-1 mr-3"></i>
+                            <span class="text-gray-400">Ground Floor 748, DDA Flats, Madangir, New Delhi 110062</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social & App -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white">Stay Connected</h3>
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-[#ae272d] flex items-center justify-center transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold mb-4">Download Our App</h4>
+                    <div class="flex flex-col space-y-3">
+                        <a href="https://play.google.com/store/apps/details?id=com.service.auntam&pcampaignid=web_share" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Google Play Store" rel="noopener noreferrer" target="_blank">
+                            <img src="src/img/Group.webp" alt="Get Auntam app on Google Play Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                        </a>
+                        <a href="https://apps.apple.com/in/app/auntam/id6753667250" class="hover:opacity-90 transition-opacity" aria-label="Download Auntam app from Apple App Store" rel="noopener noreferrer" target="_blank">
+                            <img src="src/img/serviceApple.webp" alt="Download Auntam app on Apple App Store" width="135" height="40" class="h-12 w-auto" loading="lazy">
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Middle: What We Do + Links -->
-            <div class="border-l-2 border-[#00000099] flex flex-col gap-6 px-6 md:col-span-2">
-                <h3 class="text-xl font-medium">What We Do</h3>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Creating tech-enabled tools and services to cater to the needs of the
-                    taxi service market in India. We have developed the “Auntamtravel”
-                    app as a start and will continue to add products and services to
-                    organize this unstructured taxi market in India.
-                </p>
-                <h3 class="text-lg font-semibold ">Useful Links</h3>
-                <ul class="space-y-4 text-sm">
-                    <li> <a href="./index.html">Home</a></li>
-                    <li> <a href="./about-us.html">About Us</a></li>
-                    <li> <a href="./privacy-policy.html">Privacy</a></li>
-                    <li> <a href="./terms-and-condition.html">Our Terms</a></li>
-                    <li> <a href="./refund-policy.html">Refund Policy</a></li>
-                </ul>
-            </div>
-
-            <!-- Right: Contact -->
-            <div class="px-6 border-l-2 border-[#00000099] gap-2.5 text-sm">
-                <p class="text-[#00000099] mb-4 font-medium text-base ">24x7 Help & Support - 7500880047</p>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">Email ID:<br />Auntamtravel@gmail.com</p>
-                <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi 110062
-
-                </p>
-                <!-- <p class="text-[#00000099] mb-4 font-medium text-base ">
-                    Head Office: Ground Floor748,DDA Flats, Madangir, New Delhi 110062
-                </p> -->
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500">
+                <p>&copy; 2023 Auntam. All rights reserved. India's Biggest B2B Taxi Marketplace.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Refund Policy",
+        "description": "Refund Policy for Auntam - Learn about our refund timeline, cancellation policies, and refund process.",
+        "url": "https://auntam.com/refund-policy.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Auntam",
+            "url": "https://auntam.com"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Refund Policy",
+            "description": "Refund timeline and cancellation policies for taxi bookings"
+        }
+    }
+    </script>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuToggle.setAttribute('aria-expanded', !isHidden);
+            });
+            
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
